@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj Pathak - Computer Engineering Student</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AP</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Background -->
+    <section id="hero" class="hero-section">
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">Anuj Pathak</h1>
+                <p class="hero-title">Computer Engineering Student</p>
+                <p class="hero-tagline">Building innovative solutions with code</p>
+                <button class="btn btn--primary btn--lg hero-cta" id="view-work-btn">
+                    View My Work
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-summary">Computer Engineering student at DY Patil University with a CGPA of 8.75, passionate about building scalable applications and working with machine learning technologies.</p>
+                    
+                    <div class="about-details">
+                        <div class="about-card">
+                            <h3>Education</h3>
+                            <div class="education-info">
+                                <h4>Computer Engineering</h4>
+                                <p>DY Patil University</p>
+                                <p>2022 - 2026 | CGPA: 8.75</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-card">
+                            <h3>Contact Information</h3>
+                            <div class="contact-info">
+                                <p>📧 pathakanuj2004@gmail.com</p>
+                                <p>📱 7039177875</p>
+                                <p>📍 Pune, Maharashtra, India</p>
+                                <div class="social-links">
+                                    <a href="https://github.com/Anuj3937" target="_blank" class="social-link">GitHub</a>
+                                    <a href="https://linkedin.com/in/anujpathak" target="_blank" class="social-link">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline" id="timeline">
+                <!-- Experience will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <a href="mailto:pathakanuj2004@gmail.com">pathakanuj2004@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Phone</h3>
+                        <a href="tel:7039177875">7039177875</a>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Social</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/Anuj3937" target="_blank">GitHub</a>
+                            <a href="https://linkedin.com/in/anujpathak" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Anuj Pathak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body">
+                <!-- Project details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
