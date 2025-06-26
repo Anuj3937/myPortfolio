@@ -71,7 +71,7 @@ const portfolioData = {
       "technologies": ["Python", "React", "MongoDB", "Machine Learning", "TensorFlow"],
       "role": "Lead Developer",
       "outcome": "Successfully deployed for pilot testing in a local clinic, resulting in 15% reduction in supply shortages.",
-      "github": "https://github.com/anujpathak/mediconnect",
+      "github": "https://github.com/Anuj3937/med_connect",
       "liveDemo": "https://mediconnect-demo.vercel.app"
     },
     {
@@ -82,7 +82,7 @@ const portfolioData = {
       "technologies": ["Python", "Machine Learning", "Data Analysis", "Scikit-learn", "Pandas"],
       "role": "Data Scientist & ML Engineer",
       "outcome": "Qualified for Smart India Hackathon 2024; Model achieved 87% accuracy in predicting bankruptcy risk.",
-      "github": "https://github.com/anujpathak/bankruptcy-prediction"
+      "github": "https://github.com/Anuj3937/Bankruptcy_Beacon"
     },
     {
       "id": 3,
